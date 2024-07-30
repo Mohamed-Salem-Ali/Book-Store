@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+  {{ title }}
+{% endblock title %}
+
+{% block content %}
+  <div class="book-detail">
+    <h1>{{ title }}</h1>
+    <h2>Author: {{ author }}</h2>
+    <p>Rating: {{ rate }}</p>
+    <p>
+      {% if is_bestselling %}
+        <span class="badge bestseller">Bestselling</span>
+      {% else %}
+        <span class="badge not-bestselling">Not a Bestselling</span>
+      {% endif %}
+    </p>
+    <a class="btn" href="{% url 'book_list' %}">Back to book list</a>
+  </div>
+{% endblock content %}
