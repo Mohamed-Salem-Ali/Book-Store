@@ -7,7 +7,8 @@ class Book(models.Model):
     title = models.CharField(max_length=50)
     rate = models.IntegerField(
         validators=[MinValueValidator(1),MaxValueValidator(10)])
-    is_bestselling= models.BooleanField()
+    author = models.CharField(null=True,max_length=50)
+    is_bestselling= models.BooleanField(default=False)
     
     def __str__(self):  
-	    return f"{self.title} ({self.rate})"
+	    return f"{self.title} ({self.rate}) {self.author}  {self.is_bestselling}"
