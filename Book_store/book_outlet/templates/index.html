@@ -12,6 +12,7 @@
       <a class="book-link" href="{% url 'book_detail' id=book.id %}">
         {{ book.title }} (Rating: {{ book.rate }})
       </a>
+      <p class="book-description">{{ book.description|truncatewords:20 }}</p>
     </li>
     {% endfor %}
   </ul>
