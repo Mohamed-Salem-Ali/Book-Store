@@ -8,12 +8,14 @@ def index(request):
     return render(request,"index.html",{
         "books":books
     })
-def book_detail(request,id):
-    book = get_object_or_404(Book,pk=id)
+def book_detail(request,slug):
+    book = get_object_or_404(Book,slug=slug)
     return render(request,"book_detail.html",{
+        "slug":book.slug,
         "title":book.title,
-        "author":book.author,
+        "author":book.author, 
         "rate":book.rate,
         "is_bestselling": book.is_bestselling,
-        "description": book.description
+        "description": book.description,
+        "image": book.image
     })

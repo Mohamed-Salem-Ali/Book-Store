@@ -9,7 +9,10 @@
   <ul class="book-list">
     {% for book in books %}
     <li class="book-item">
-      <a class="book-link" href="{% url 'book_detail' id=book.id %}">
+      <a class="book-link" href="{% url 'book_detail' slug=book.slug %}">
+        {% if book.image %}
+        <img src="{{ book.image.url }}" alt="{{ book.title }} cover" class="book-cover">
+        {% endif %}
         {{ book.title }} (Rating: {{ book.rate }})
       </a>
       <p class="book-description">{{ book.description|truncatewords:20 }}</p>

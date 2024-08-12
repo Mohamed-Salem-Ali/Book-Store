@@ -20,6 +20,7 @@ ul {
     margin-top: 20px;
 }
 
+
 .book-item {
     background-color: #fff;
     padding: 10px;
@@ -83,4 +84,11 @@ ul {
     color: #666;
     font-size: 14px;
     margin-top: 5px;
+}
+
+.book-cover {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    float: left;
 }
