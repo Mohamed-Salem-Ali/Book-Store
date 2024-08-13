@@ -1,22 +1,27 @@
 {% extends "base.html" %}
 
 {% block title %}
-  {{ title }}
+{{ title }}
 {% endblock title %}
 
 {% block content %}
-  <div class="book-detail">
-    <h1>{{ title }}</h1>
-    <h2>Author: {{ author }}</h2>
-    <p>Rating: {{ rate }}</p>
-    <p>{{ description }}</p>
-    <p>
-      {% if is_bestselling %}
+<div class="book-detail">
+  <div class="book-info">
+    <img class="bookdetails-cover" src="{{ image.url }}" alt="{{ title }} cover">
+    <div class="book-meta">
+      <h1>{{ title }}</h1>
+      <h2>Author: {{ author }}</h2>
+      <p>Rating: {{ rate }}</p>
+      <p>{{ description }}</p>
+      <p>
+        {% if is_bestselling %}
         <span class="badge bestseller">Bestselling</span>
-      {% else %}
+        {% else %}
         <span class="badge not-bestselling">Not a Bestselling</span>
-      {% endif %}
-    </p>
-    <a class="btn" href="{% url 'book_list' %}">Back to book list</a>
+        {% endif %}
+      </p>
+      <a class="btn" href="{% url 'book_list' %}">Back to book list</a>
+    </div>
   </div>
+</div>
 {% endblock content %}
