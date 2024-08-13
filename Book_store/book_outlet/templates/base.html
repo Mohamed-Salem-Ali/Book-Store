@@ -1,13 +1,33 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock title %}</title>
-    {% load static %}
+    <title>{% block title %}MSA Book Store{% endblock title %}</title>
     <link rel="stylesheet" href="{% static 'book_outlet/css/styles.css' %}">
 </head>
 <body>
-    {% block content %}{% endblock content %}
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="{% url 'book_list' %}">MSA Book Store</a></h1>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="{% url 'book_list' %}">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-content">
+        {% block content %}{% endblock content %}
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 MSA Book Store. All rights reserved.</p>
+    </footer>
 </body>
 </html>

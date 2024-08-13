@@ -1,22 +1,46 @@
 {% extends "base.html" %}
 
 {% block title %}
-  All Books
+MSA Book Store
 {% endblock title %}
 
 {% block content %}
-  <h1>All Books</h1>
-  <ul class="book-list">
-    {% for book in books %}
-    <li class="book-item">
-      <a class="book-link" href="{% url 'book_detail' slug=book.slug %}">
-        {% if book.image %}
-        <img src="{{ book.image.url }}" alt="{{ book.title }} cover" class="book-cover">
-        {% endif %}
-        {{ book.title }} (Rating: {{ book.rate }})
-      </a>
-      <p class="book-description">{{ book.description|truncatewords:20 }}</p>
-    </li>
-    {% endfor %}
+
+<h1>Welcome to MSA Book Store</h1>
+  <p>Your one-stop shop for all kinds of books.</p>
+<section class="features">
+  
+  <h2>Features</h2>
+  <ul>
+    <li>Browse a wide selection of books across various genres.</li>
+    <li>View detailed descriptions and ratings for each book.</li>
+    <li>Search for books by title or author.</li>
+    <li>Add, update, and delete books with ease.</li>
+    <li>User authentication for secure access.</li>
   </ul>
+</section>
+
+<h2>All Books</h2>
+<ul class="book-list">
+  {% for book in books %}
+  <li class="book-item">
+    <a class="book-link" href="{% url 'book_detail' slug=book.slug %}">
+
+      {% if book.image %}
+      <img src="{{ book.image.url }}" alt="{{ book.title }} cover" class="book-cover">
+      {% endif %}
+      <p>
+        {% if book.is_bestselling %}
+        <span class="badge bestseller">Bestselling</span>
+        {% else %}
+        <span class="badge not-bestselling">Not a Bestselling</span>
+        {% endif %}
+      </p>
+      {{ book.title }} (Rating: {{ book.rate }})
+    </a>
+
+    <!-- <p class="book-description">{{ book.description|truncatewords:20 }}</p> -->
+  </li>
+  {% endfor %}
+</ul>
 {% endblock content %}
