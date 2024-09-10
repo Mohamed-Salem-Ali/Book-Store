@@ -1,0 +1,262 @@
+[
+{
+    "model": "book_outlet.book",
+    "pk": 1,
+    "fields": {
+        "slug": "the-great-gatsby",
+        "title": "The Great Gatsby",
+        "rate": 8,
+        "author": "F. Scott Fitzgerald",
+        "is_bestselling": true,
+        "description": "A classic novel exploring the American Dream and the excesses of the Jazz Age through the mysterious millionaire Jay Gatsby and his obsession with Daisy Buchanan.",
+        "image": "book_cover/The_Great_Gatsby.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 2,
+    "fields": {
+        "slug": "to-kill-a-mockingbird",
+        "title": "To Kill a Mockingbird",
+        "rate": 9,
+        "author": "Harper Lee",
+        "is_bestselling": true,
+        "description": "A powerful story of racial injustice and childhood innocence, seen through the eyes of young Scout Finch in the racially segregated American South.",
+        "image": "book_cover/To_Kill_a_Mockingbird_wBzT7O0.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 3,
+    "fields": {
+        "slug": "1984",
+        "title": "1984",
+        "rate": 10,
+        "author": "George Orwell",
+        "is_bestselling": true,
+        "description": "A dystopian tale of totalitarianism and surveillance, depicting a world where individuality is suppressed and truth is controlled by the Party.",
+        "image": "book_cover/1984.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 4,
+    "fields": {
+        "slug": "the-catcher-in-the-rye",
+        "title": "The Catcher in the Rye",
+        "rate": 7,
+        "author": "J.D. Salinger",
+        "is_bestselling": false,
+        "description": "An iconic novel about teenage rebellion and alienation, following the experiences of the disillusioned Holden Caulfield in 1950s New York.",
+        "image": "book_cover/The_Catcher_in_the_Rye.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 5,
+    "fields": {
+        "slug": "pride-and-prejudice",
+        "title": "Pride and Prejudice",
+        "rate": 9,
+        "author": "Jane Austen",
+        "is_bestselling": true,
+        "description": "A beloved romantic comedy that critiques the British class system, focusing on the witty and headstrong Elizabeth Bennet and her complex relationship with Mr. Darcy.",
+        "image": "book_cover/Pride_and_Prejudice.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 6,
+    "fields": {
+        "slug": "the-hobbit",
+        "title": "The Hobbit",
+        "rate": 8,
+        "author": "J.R.R. Tolkien",
+        "is_bestselling": true,
+        "description": "A fantasy adventure where Bilbo Baggins, a hobbit, embarks on a journey to help a group of dwarves reclaim their homeland from the dragon Smaug.",
+        "image": "book_cover/The_Hobbit.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 7,
+    "fields": {
+        "slug": "moby-dick",
+        "title": "Moby Dick",
+        "rate": 6,
+        "author": "Herman Melville",
+        "is_bestselling": false,
+        "description": "An epic tale of obsession and vengeance, as Captain Ahab relentlessly pursues the great white whale Moby Dick across the seas.",
+        "image": "book_cover/Moby_Dick.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 8,
+    "fields": {
+        "slug": "war-and-peace",
+        "title": "War and Peace",
+        "rate": 7,
+        "author": "Leo Tolstoy",
+        "is_bestselling": false,
+        "description": "A grand historical novel set during the Napoleonic Wars, exploring the lives of Russian aristocrats and the impact of war on society.",
+        "image": "book_cover/War_and_Peace.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 9,
+    "fields": {
+        "slug": "the-odyssey",
+        "title": "The Odyssey",
+        "rate": 8,
+        "author": "Homer",
+        "is_bestselling": false,
+        "description": "An ancient Greek epic that chronicles the hero Odysseus's perilous journey home after the Trojan War, encountering mythical creatures and divine challenges.",
+        "image": "book_cover/The_Odyssey.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 10,
+    "fields": {
+        "slug": "harry-potter-and-the-sorcerer-stone",
+        "title": "Harry Potter and the Sorcerer Stone",
+        "rate": 9,
+        "author": "J.K. Rowling",
+        "is_bestselling": true,
+        "description": "Harry Potter and the Sorcerer’s Stone is a 1997 novel by J. K. Rowling, known elsewhere as Harry Potter and the Philosopher’s Stone1. The story follows young wizard Harry Potter as he solves a mystery involving a sorcerer’s stone, leading him to the evil Voldemort. Filled with imaginative details, this fantasy novel is the first in the immensely popular Harry Potter series",
+        "image": "book_cover/Harry_Potter_and_the_Sorcerer_Stone.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 11,
+    "fields": {
+        "slug": "the-da-vinci-code",
+        "title": "The Da Vinci Code",
+        "rate": 7,
+        "author": "Dan Brown",
+        "is_bestselling": true,
+        "description": "A fast-paced thriller that follows symbologist Robert Langdon as he unravels a conspiracy involving the Catholic Church and a secret society.",
+        "image": "book_cover/The_Da_Vinci_Code.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 12,
+    "fields": {
+        "slug": "the-alchemist",
+        "title": "The Alchemist",
+        "rate": 8,
+        "author": "Paulo Coelho",
+        "is_bestselling": true,
+        "description": "A philosophical novel about following one's dreams, telling the story of Santiago, a shepherd who embarks on a journey to find a hidden treasure.",
+        "image": "book_cover/The_Alchemist.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 13,
+    "fields": {
+        "slug": "the-lord-of-the-rings",
+        "title": "The Lord of the Rings",
+        "rate": 10,
+        "author": "J.R.R. Tolkien",
+        "is_bestselling": true,
+        "description": "An epic fantasy saga that follows the quest to destroy a powerful ring and defeat the dark lord Sauron, set in the richly imagined world of Middle-earth.",
+        "image": "book_cover/The_Lord_of_the_Rings.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 14,
+    "fields": {
+        "slug": "gone-with-the-wind",
+        "title": "Gone with the Wind",
+        "rate": 7,
+        "author": "Margaret Mitchell",
+        "is_bestselling": false,
+        "description": "A sweeping historical romance set during the American Civil War and Reconstruction, focusing on the life of Scarlett O'Hara and her tumultuous relationships.",
+        "image": "book_cover/Gone_with_the_Wind.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 15,
+    "fields": {
+        "slug": "the-chronicles-of-narnia",
+        "title": "The Chronicles of Narnia",
+        "rate": 8,
+        "author": "C.S. Lewis",
+        "is_bestselling": true,
+        "description": "A beloved fantasy series that transports readers to the magical land of Narnia, where children become heroes in the battle between good and evil.",
+        "image": "book_cover/The_Chronicles_of_Narnia.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 16,
+    "fields": {
+        "slug": "a-tale-of-two-cities",
+        "title": "A Tale of Two Cities",
+        "rate": 9,
+        "author": "Charles Dickens",
+        "is_bestselling": true,
+        "description": "A historical novel set in London and Paris before and during the French Revolution, exploring themes of sacrifice, redemption, and resurrection.",
+        "image": "book_cover/A_Tale_of_Two_Cities.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 17,
+    "fields": {
+        "slug": "the-brothers-karamazov",
+        "title": "The Brothers Karamazov",
+        "rate": 7,
+        "author": "Fyodor Dostoevsky",
+        "is_bestselling": false,
+        "description": "A philosophical novel exploring deep ethical and moral questions, centered on the tumultuous lives of the Karamazov family.",
+        "image": "book_cover/The_Brothers_Karamazov.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 18,
+    "fields": {
+        "slug": "brave-new-world",
+        "title": "Brave New World",
+        "rate": 8,
+        "author": "Aldous Huxley",
+        "is_bestselling": true,
+        "description": "A dystopian novel that imagines a future society where humans are engineered and conditioned for specific roles, raising questions about freedom and happiness.",
+        "image": "book_cover/Brave_New_World.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 19,
+    "fields": {
+        "slug": "ulysses",
+        "title": "Ulysses",
+        "rate": 6,
+        "author": "James Joyce",
+        "is_bestselling": false,
+        "description": "A modernist novel that parallels Homer's Odyssey, following a day in the life of Leopold Bloom in Dublin, using stream-of-consciousness narrative techniques.",
+        "image": "book_cover/Ulysses.jpeg"
+    }
+},
+{
+    "model": "book_outlet.book",
+    "pk": 20,
+    "fields": {
+        "slug": "crime-and-punishment",
+        "title": "Crime and Punishment",
+        "rate": 8,
+        "author": "Fyodor Dostoevsky",
+        "is_bestselling": true,
+        "description": "A psychological exploration of guilt and redemption, focusing on a young man's moral dilemmas after committing a murder.",
+        "image": "book_cover/CrimePunishment.jpeg"
+    }
+}
+]
