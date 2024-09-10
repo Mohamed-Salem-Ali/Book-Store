@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-t!k%5@s*+-f)w=#zz@gz_+k$2k_qru3jc7%6m$3lztpgk6&4pp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['MohamedSalemAli.pythonanywhere.com']
 
 
 # Application definition
@@ -119,9 +119,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# STATICFILES_DIRS = [
-#     BASE_DIR / "static",
-# ]
+STATICFILES_DIRS = [
+     BASE_DIR / "static",
+]
 
 
 # The absolute path to the directory where collectstatic will collect
